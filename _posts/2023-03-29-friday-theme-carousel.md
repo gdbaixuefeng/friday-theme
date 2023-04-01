@@ -3,10 +3,10 @@ title:  博客总结
 tags:
   - Ruby
   - HTML
-  - github pages
+  - Github Pages
   - Markdown
   - Blog
-  - summarize
+  - Summarize
 images:
   - https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5b1016b885e7438c4633109d77368d4d&auto=format&fit=crop&w=1651&q=80
   - https://images.unsplash.com/photo-1504626835342-6b01071d182e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=975855d515c9d56352ee3bfe74287f2b&auto=format&fit=crop&w=1651&q=80
@@ -15,13 +15,11 @@ images:
   - https://images.unsplash.com/photo-1500402448245-d49c5229c564?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f19c590b253f803a7f9b643c59017160&auto=format&fit=crop&w=1650&q=80
 ---
 
-Here's an example for multiple images that uses Bootstrap's Carousel javascript component for a photo slideshow. You don't need to write any JavaScript, just place some Liquid tags and HTML in your Markdown.
+本次博客的部署是使用GitHUb Pages和Jekyll，GitHub自带Jekyll引擎，使用Markdown写的md文件，直接提交到GitHub上就可以生成博客了（Hexo需要在本地生成html文件后才能上传）。这也意味着我们甚至不需要安装本地开发环境，直接在GitHub上修改并提交代码就可以了。
 
 <!--more-->
+不过我还是安装了ruby、rubygems和Jekyll，因为是第一次接触这个Jekyll，安装完成后也是在GitHub上选择了一个叫做Friday Theme的主题，直接fork然后clone到本地，根据install.md文档也是配下标题和头像的参数，本地运行好以后再部署到GitHUb上。弄完以后才反应过来本地环境是不用下载的。
 
-To automate the layout, a list of images is stored in a frontmatter variable. The post then loops over that list to output the carousel. This is easier than copy-pasting the same HTML for each image.
-
-Here's the carousel in action.
 
 <div id="carouselExampleControls" class="carousel slide mb-4" data-ride="carousel">
     <div class="carousel-inner">
